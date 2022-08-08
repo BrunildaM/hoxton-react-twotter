@@ -1,0 +1,27 @@
+.App {
+ display: grid;
+ grid-template-columns: auto 1fr auto;
+ margin: 2rem;
+ gap: 1rem;
+}
+
+
+.leftMenu{
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+
+}
+
+
+.leftMenu-list{
+  list-style: none;
+  
+}
+
+.leftMenu-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+}
+
