@@ -1,14 +1,29 @@
 
 import TweetsList from "./TweetsList";
+import {BsImage} from "react-icons/bs"
+import {AiOutlineGif}  from "react-icons/ai"
+import {BiPoll}  from "react-icons/bi"
 
+ 
 function TweetsMenuHome() {
     return (
         <main>
         <h2>Home</h2>
-        <header>
+        <form onSubmit={(event) => {
+          event.preventDefault()
 
-          <input type="text" />
-        </header>
+        }}>
+
+          <textarea name="newTweet" placeholder="What's happening?"/>
+          <div>
+          <a href="#"> <BsImage /> </a>  
+          <a href="#"> <AiOutlineGif /> </a>
+          <a href="#"> <BiPoll /> </a>
+          </div>
+
+          <button className="twitter-button">Tweet</button>
+          
+        </form>
       
       <TweetsList />
 
