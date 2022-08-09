@@ -1,12 +1,24 @@
-// to be used at the homepage and single tweet page
+import { Tweet } from "./TweetsList"
 
-function SingleTweetCard() { 
-    return (
-        <div> user
-            title
-            picture
-        </div>
-    )
+// to be used at the homepage and single tweet page
+type Props=  {
+    tweet: Tweet
 }
 
-export default SingleTweetCard
+function SingleTweetCard({tweet}: Props) {
+
+  return (
+      <div className="tweet-wrapper">
+          <img src={tweet.user.profileImage} alt="" />
+          <p>{tweet.user.name}</p>
+          <p>{tweet.user.username}</p>
+          <p>{tweet.text}</p>
+          <img src={tweet.image} alt="" />
+      </div>
+          
+
+       
+  )
+}
+
+export default SingleTweetCard;

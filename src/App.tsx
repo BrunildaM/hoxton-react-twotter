@@ -1,30 +1,21 @@
-import { useState } from 'react'
 
 import './App.css'
-import LeftMenu from './Components/LeftMenu'
-import RightMenu from './Components/RightMenu'
-import SingleTweetCard from './Components/SingleTweetCard'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+
+
+
 
 function App() {
   
 
   return (
     <div className="App">
-     <LeftMenu />
-
-      <main>
-        <h2>Home</h2>
-        <header>
-
-          <input type="text" />
-        </header>
-      
-      <SingleTweetCard />
-
-      </main>
-
-      <RightMenu />
      
+     <Routes>
+            <Route index element={<Navigate replace to='/home' />} />
+            <Route path="/home" element={<Home />} />
+        </Routes>
      
     </div>
   )

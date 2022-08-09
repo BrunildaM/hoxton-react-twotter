@@ -5,23 +5,52 @@
  gap: 1rem;
 }
 
+.HomePage {
+  display: grid;
+ grid-template-columns: auto 1fr auto;
+ margin: 2rem;
+ gap: 1rem;
+}
+
 
 .leftMenu{
   display: grid;
   grid-auto-flow: row;
   place-items: center;
+  gap: 1rem;
 
+}
+
+.leftMenu-nav{
+  display: grid;
+  gap: 1rem;
 }
 
 
 .leftMenu-list{
-  list-style: none;
-  
+  list-style: none; 
 }
 
 .leftMenu-footer{
   display: grid;
   grid-template-columns: 1fr 1fr ;
+  margin: 1rem;
+
 
 }
 
+.twitter-logo{
+  position: start;
+
+}
+
+
+.twitter-button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  background-color: #1d9bf0;
+  padding: 0.5rem 3rem;
+  color: #fff;
+}
