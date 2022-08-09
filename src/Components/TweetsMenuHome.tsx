@@ -1,4 +1,4 @@
-import SingleTweetCard from "./SingleTweetCard";
+
 import TweetsList from "./TweetsList";
 
 function TweetsMenuHome() {
