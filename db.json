@@ -4,6 +4,7 @@
         "id": 1,
         "text": "Cheers to 10 years of exploring the Red Planet, Curiosity. The rover's milestone was celebrated here on Earth, as well as aboard the  @Space_Station.",
         "user": {
+          "userid": 3,
           "name": "NASA's Johnson Space Center",
           "username": "@NASA_Johnson",
           "profileImage": "https://pbs.twimg.com/profile_images/915969030250405888/T0OggIEx_400x400.jpg"
@@ -14,6 +15,7 @@
         "id": 2,
         "text": "Are you hip to planetary nebulas? Hubble captured superfine structures in the Ring Nebula, the glowing remains of a Sun-like star. Dark knots of dense gas are embedded along the inner rim. Find out what the colors mean: https://bit.ly/3PHIJJp",
         "user": {
+          "userid": 5,
           "name": "Hubble Space Telescope",
           "username": "@HubbleTelescop",
           "profileImage": "https://pbs.twimg.com/profile_images/1075826361468620800/8N4DUfk7_400x400.jpg"
@@ -24,6 +26,7 @@
         "id": 3,
         "text": "Why are so few women in computer science and engineering? Conventional wisdom says girls grow up with less interest in these subjects, but research suggests that isn’t the full picture, @scheryan1, @AllisonMaster and Andrew Meltzoff write for @SciAm.",
         "user": {
+          "userid": 2,
           "name": "Quanta Magazine",
           "username": "@QuantaMagazine",
           "profileImage": "https://pbs.twimg.com/profile_images/859465000825614336/cBeerOAi_400x400.jpg"
@@ -34,6 +37,7 @@
         "id": 4,
         "text": "Climate change impacts are making most infectious diseases worse — new paper in @NatureClimate today",
         "user": {
+          "userid": 6,
           "name": "Adam Vaughan",
           "username": "@adamvaughan_uk",
           "profileImage": "https://pbs.twimg.com/profile_images/1220361837440577537/WOYSLO5f_400x400.jpg"
@@ -44,6 +48,7 @@
         "id": 5,
         "text": "There are views, and then there's Greece. 😍",
         "user": {
+          "userid": 8,
           "name": "Royal Caribbean",
           "username": "@RoyalCaribbean",
           "profileImage": "https://pbs.twimg.com/profile_images/1542844274852745220/qTdk1ynK_400x400.jpg"
@@ -54,6 +59,7 @@
         "id": 6,
         "text": "World's highest single arch railway bridge over Chenab river in Kashmir, is scheduled for completion. An Indian 🇮🇳 Engineering Marvel ! ",
         "user": {
+          "userid": 10,
           "name": "Erik Solheim",
           "username": "@ErikSolheim",
           "profileImage": "https://pbs.twimg.com/profile_images/951336776551030784/o-MTllBS_400x400.jpg"
@@ -64,6 +70,7 @@
         "id": 7,
         "text": "And that is why you should use typescript",
         "user": {
+          "userid": 9,
           "name": "Padmashree Jha",
           "username": "@PadmashreeJha",
           "profileImage": "https://pbs.twimg.com/profile_images/1552268372972343296/UJMtHV3W_400x400.png"
@@ -74,6 +81,7 @@
         "id": 8,
         "text": "There’s a double beauty whenever a swan, Swims on a lake with her double thereon.",
         "user": {
+          "userid": 7,
           "name": "I❤️Nature",
           "username": "@nature_forum",
           "profileImage": "https://pbs.twimg.com/profile_images/1489170250054750208/WdT_l-rW_400x400.jpg"
@@ -84,6 +92,7 @@
         "id": 9,
         "text": "motivational monday! #BeStrongerThanYourStrongestExcuse #GymWallDecal #MotivationalQuote #ByHouseHoldWords http://etsy.me/1rKspMq via @Etsy",
         "user": {
+          "userid": 4,
           "name": "hhwords",
           "username": "@hhwords",
           "profileImage": "https://pbs.twimg.com/profile_images/645701564556947456/2vJAKqQv_400x400.jpg"
@@ -94,6 +103,7 @@
         "id": 10,
         "text": "An investment in knowledge pays the best interest.- Benjamin Franklin",
         "user": {
+          "userid": 1,
           "name": "Thinking Ink Press",
           "username": "@ThinkNiche",
           "profileImage": "https://pbs.twimg.com/profile_images/788093638286843905/2_Xcgcst_400x400.jpg"
@@ -101,5 +111,19 @@
         "image": "https://pbs.twimg.com/media/FZjahP2WQAAXRfQ?format=jpg&name=900x900"
       }
 
-    ]
+    ],
+"user" : [
+  {"userid": 1,
+    "name": "Thinking Ink Press",
+    "username": "@ThinkNiche",
+    "profileImage": "https://pbs.twimg.com/profile_images/788093638286843905/2_Xcgcst_400x400.jpg",
+    "tweets": {
+      "id": 10,
+        "text": "An investment in knowledge pays the best interest.- Benjamin Franklin",
+        "image": "https://pbs.twimg.com/media/FZjahP2WQAAXRfQ?format=jpg&name=900x900"
+
+    }
+
+  }
+]
 }

@@ -1,18 +1,46 @@
 
-import TweetsList from "./TweetsList";
+import TweetsList, { Props } from "./TweetsList";
 import {BsImage} from "react-icons/bs"
 import {AiOutlineGif}  from "react-icons/ai"
 import {BiPoll}  from "react-icons/bi"
 
+
  
-function TweetsMenuHome() {
+function TweetsMenuHome({tweets, setTweets} :Props) {
     return (
         <main>
         <h2>Home</h2>
+           
         <form onSubmit={(event) => {
-          event.preventDefault()
+          event.preventDefault();
 
-        }}>
+
+          fetch("http://localhost:3005/tweets", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({
+                    text: event.target.tweet.value,
+                    user: {
+                      name: '',
+                      username: "",
+                      profileImage:
+                        "",
+                    },
+                    image: "",
+                  }),
+                })
+                  .then((res) => res.json())
+                  .then((tweet) => {
+                    setTweets([...tweets, tweet]);
+                  });
+
+                event.target.tweet.value = "";
+                location.reload();
+              }}
+            >
+       
 
           <textarea name="newTweet" placeholder="What's happening?"/>
           <div>
@@ -21,11 +49,11 @@ function TweetsMenuHome() {
           <a href="#"> <BiPoll /> </a>
           </div>
 
-          <button className="twitter-button">Tweet</button>
+          <button className="twitter-button"  onClick={() => {}}>Tweet</button>
           
         </form>
       
-      <TweetsList />
+      <TweetsList tweets={tweets} setTweets={setTweets}/>
 
       </main>
     )

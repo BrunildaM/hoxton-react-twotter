@@ -3,7 +3,7 @@ import './SingleTweetCard.css'
 import { Link } from "react-router-dom";
 
 // to be used at the homepage and single tweet page
-export type Props = {
+type Props = {
   tweet: Tweet;
 };
 

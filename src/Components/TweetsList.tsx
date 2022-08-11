@@ -1,11 +1,13 @@
 import SingleTweetCard from "./SingleTweetCard";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export type Tweet = {
   id: number;
   text: string;
   user: {
+    userId: number
     name: string;
     username: string;
     profileImage: string;
@@ -13,9 +15,14 @@ export type Tweet = {
   image: string;
 };
 
-function TweetsList() {
+export type Props = {
+  tweets: Tweet[];
+  setTweets: (tweets: Tweet[]) => void;
+};
 
-    const [tweets, setTweets] = useState<Tweet[]>([]);
+function TweetsList({tweets, setTweets}: Props) {
+
+   
 
     useEffect(() => {
       fetch("http://localhost:3005/tweets")
@@ -26,8 +33,8 @@ function TweetsList() {
         
 <div >
       {tweets.map((tweet) => 
-      <SingleTweetCard key={tweet.id} tweet={tweet}/>
-
+    <Link to='/singleTweet'><SingleTweetCard key={tweet.id} tweet={tweet}/>
+    </Link> 
     )}
     </div>
 )}

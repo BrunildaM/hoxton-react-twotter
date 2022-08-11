@@ -8,6 +8,7 @@ import { FaRegBookmark } from "react-icons/fa";
 import { CgPlayListSearch } from "react-icons/cg";
 import { CgProfile } from "react-icons/cg";
 import { CgMoreO } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function LeftMenu() {
   return (
@@ -58,12 +59,12 @@ function LeftMenu() {
       <button className="twitter-button">Tweet</button>
 
       <footer className="leftMenu-footer">
-        <button>
+       <Link to='/user' > <button>
           {" "}
           <p>user logo</p>
           <p>user name</p>
           <p>username</p>
-        </button>
+        </button></Link>
       </footer>
     </div>
   );
